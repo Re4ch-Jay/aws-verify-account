@@ -6,7 +6,7 @@ import Footer from './Components/Footer';
 function App() {
 
   return (
-    <div className="h-screen flex flex-col justify-center items-center">
+    <div className="h-screen flex flex-col justify-center items-center m-3">
       <Navbar/>
 
       <Form />

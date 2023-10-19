@@ -7,7 +7,7 @@ export default function Navbar() {
             <a href="/" className="flex items-center">
             <img
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/2560px-Amazon_Web_Services_Logo.svg.png"
-                className="h-14 mr-3"
+                className="h-8 mr-3 md:h-14 md:mr-6"
                 alt="AWS Logo"
             />
             </a>

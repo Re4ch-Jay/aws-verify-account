@@ -12,11 +12,11 @@ export default function Form() {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="max-w-screen-xl flex flex-col md:flex-row gap-5 items-center justify-center mt-10"
+      className="max-w-screen-xl flex flex-col md:flex-row gap-5 items-center justify-center mt-5 md:mt-10"
     >
       <div className="w-full md:w-1/2 mx-auto md:mx-0">
-        <p className="font-medium text-xl">Explore Free Tier products with a new AWS account.</p>
-        <p className="text-lg mt-4">To learn more, visit aws.amazon.com/free.</p>
+        <p className="font-medium text-sm md:text-lg lg:text-2xl">Explore Free Tier products with a new AWS account.</p>
+        <p className="text-sm md:text-base lg:text-lg mt-4">To learn more, visit aws.amazon.com/free.</p>
         <img
           src="https://d3c9ouasuy8pg6.cloudfront.net/dist/images/credential-light_a0fe0c5fd9697bd0322aa18f1769a946.png"
           alt=""
@@ -28,7 +28,7 @@ export default function Form() {
       <div className="border-b h-96 md:border-r md:border-0 md:m-10 md:block hidden"></div>
 
       <div className="w-full md:w-1/2">
-        <p className="text-xl font-medium mb-2">Provide AWS credential to verify your account</p>
+        <p className="font-medium mb-2 text-sm md:text-lg lg:text-2xl">Provide AWS credential to verify your account</p>
         <div className="mt-6">
           <label className="block text-sm mb-1">Root user email address</label>
           <Controller
@@ -89,7 +89,7 @@ export default function Form() {
           />
         </div>
         <div className="mt-6">
-          <label className="block text-sm mb-1">AWS account password</label>
+          <label className="block text-sm md:text-xs mb-1">AWS account password</label>
           <Controller
             name="password"
             control={control}
